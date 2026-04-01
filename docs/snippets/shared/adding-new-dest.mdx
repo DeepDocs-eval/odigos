@@ -160,7 +160,7 @@ Now that our new vendor can be persisted/loaded in the Kubernetes data store, we
       region, exists := config[regionKey]
       if !exists {
         region = "us"
-        return errorMissingKey(regionKey)
+        }
       }
 
       endpoint, exists := config[urlKey]
